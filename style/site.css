@@ -2,7 +2,7 @@ html{
     height: 100%;
 }
 body{
-    background: #000 url(/background.png) repeat;
+    background: #000 url(../images/background.png) repeat;
     height: 100%;
     margin: 0;
 }
@@ -12,12 +12,12 @@ header{
     padding: 10px;
     box-shadow:         0px 7px 10px -5px rgba(50, 50, 50, 0.75);
     font-size: 30px;
-    background-color: white;
+    background-color: whitesmoke;
 }
 #content{
     box-sizing: border-box;
-    box-shadow: inset 0px 7px 10px -5px rgba(50, 50, 50, 0.75);
-    padding-top: 20px;
+    //box-shadow: inset 0px 7px 10px -5px rgba(50, 50, 50, 0.75);
+    //padding-top: 20px;
     height: 100%;
     max-width: 800px;
     background-color: white;
@@ -44,4 +44,36 @@ header{
 footer{
     background-color: white;
     height: 50px;
+}
+nav{
+    max-width: 800px;
+    background-color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+nav ul{
+}
+nav ul li{
+    font-family: Arial Black, Impact;
+    display: inline;
+    list-style: none;
+    padding: 5px;
+}
+.interestrow{
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+.interestrow span{
+    font-family: Arial Black, Impact;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: right;
+    color: black;
+    background-color: gray;
+
 }

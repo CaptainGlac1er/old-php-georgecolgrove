@@ -1,30 +1,19 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style/site.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+<?php
+    $title = "GWC";
+    $content = <<<EOF
+    <a href="https://github.com/CaptainGlac1er"><div class="interestrow" style="background: url(images/coding.jpg);">
+        <span>Coding</span>
+    </div></a>
+    <div class="interestrow" style="background: url(images/electronics.jpg);">
+        <span>Computers</span>
+    </div>
+    <a href="https://www.facebook.com/gwcphotography/"><div class="interestrow" style="background: url(images/photo.jpg);">
+        <span>Photography</span>
+    </div></a>
+    <a href="http://steamcommunity.com/id/captainglac1er/"><div class="interestrow" style="background: url(images/minecraft.png);">
+        <span>Gaming</span>
+    </div></a>
+EOF;
+    include("php/template.php");
 
-
-        </script>
-    </head>
-    <body>
-        <div id="contentback">
-        </div>
-        <div id="top">
-            <header>
-                <img src="images/personalLogo2.png" width="100" height="100" align="bottom">
-                <br />
-                <strong>George Walter Colgrove IV</strong>
-            </header>
-                <section id="content">
-                    Student of Rochester Institute of Technology
-
-
-                </section>
-        </div>
-        <footer>
-            Copyright George Colgrove
-        </footer>
-    </body>
-</html>
+?>
