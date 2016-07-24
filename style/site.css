@@ -1,0 +1,47 @@
+html{
+    height: 100%;
+}
+body{
+    background: #000 url(/background.png) repeat;
+    height: 100%;
+    margin: 0;
+}
+header{
+    text-align:center;
+    border-left: 5px solid red;
+    padding: 10px;
+    box-shadow:         0px 7px 10px -5px rgba(50, 50, 50, 0.75);
+    font-size: 30px;
+    background-color: white;
+}
+#content{
+    box-sizing: border-box;
+    box-shadow: inset 0px 7px 10px -5px rgba(50, 50, 50, 0.75);
+    padding-top: 20px;
+    height: 100%;
+    max-width: 800px;
+    background-color: white;
+    margin: 0 auto;
+}
+#contentback{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: white;
+    height: 100%;
+    right: 0;
+}
+#top{
+    //height: calc(100% - 50px);
+    min-height: calc(100% - 50px);
+    //box-sizing: border-box;
+    overflow: hidden;
+}
+footer{
+    background-color: white;
+    height: 50px;
+}
