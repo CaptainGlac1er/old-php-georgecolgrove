@@ -98,10 +98,12 @@ nav ul li{
 
 }
 .subsection{
-    height: 40px;
+    overflow: auto;
+    box-sizing: border-box;
+    //height: 40px;
     background-color: lightgray;
     padding: 10px;
-    margin: -10px;
+    //margin: 10px;
 }
 .subsection img{
     height: 40px;
@@ -116,10 +118,13 @@ nav ul li{
 .group{
     box-sizing: border-box;
     background-color: azure;
-    padding: 10px;
+    //padding: 10px;
     min-width: 400px;
     width: 50%;
     float: left;
+}
+.group h2{
+    padding-left: 10px;
 }
 #panel{
     padding: 10px;
