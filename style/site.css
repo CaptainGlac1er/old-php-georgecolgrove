@@ -1,8 +1,13 @@
 html{
     height: 100%;
 }
+h4{
+    margin: 0;
+    width: auto;
+}
 body{
     background: #000 url(../images/background.png) repeat;
+    background-attachment: fixed;
     height: 100%;
     margin: 0;
 }
@@ -46,24 +51,38 @@ footer{
     height: 50px;
 }
 nav{
+    box-shadow: inset 0px 7px 10px -5px rgba(50, 50, 50, 0.75);
     max-width: 800px;
     background-color: white;
     margin: 0 auto;
-    text-align: center;
+    //text-align: center;
+    box-sizing: border-box;
 }
 nav ul{
+    box-sizing: border-box;
+    width: 100%;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
 }
 nav ul li{
     font-family: Arial Black, Impact;
     display: inline;
     list-style: none;
+    float:left;
+    width: 30%;
+    min-width: 140px;
+    height: 40px;
+    line-height: 40px;
     padding: 5px;
+    text-align: center;
 }
 .interestrow{
     box-sizing: border-box;
     width: 100%;
     height: 200px;
     position: relative;
+    //background-attachment: fixed;
 }
 .interestrow span{
     font-family: Arial Black, Impact;
@@ -72,8 +91,36 @@ nav ul li{
     bottom: 0;
     right: 0;
     left: 0;
+    //width: 200px;
     text-align: right;
     color: black;
     background-color: gray;
 
+}
+.subsection{
+    height: 40px;
+    background-color: lightgray;
+    padding: 10px;
+    margin: -10px;
+}
+.subsection img{
+    height: 40px;
+    float: right;
+}
+.subsection h4{
+    float: left;
+}
+.subsection div{
+    float: left;
+}
+.group{
+    box-sizing: border-box;
+    background-color: azure;
+    padding: 10px;
+    min-width: 400px;
+    width: 50%;
+    float: left;
+}
+#panel{
+    padding: 10px;
 }

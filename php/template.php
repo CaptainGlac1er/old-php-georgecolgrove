@@ -16,12 +16,12 @@
                 <header>
                     <img src="../images/personalLogo2.png" width="100" height="100" align="bottom">
                     <br />
-                    <strong>George Walter Colgrove IV</strong>
+                    <strong>George Walter Colgrove IV</strong><br/><strong>CaptainGlac1er</strong>
                 </header>
                 <nav>
                     <ul>
-                        <li>INTERESTS</li>
-                        <li>RESUME</li>
+                        <a href="/"><li>INTERESTS</li></a>
+                        <a href="/resume.php"><li>RESUME</li></a>
                         <li>ABOUT</li>
                     </ul>
                 </nav>
