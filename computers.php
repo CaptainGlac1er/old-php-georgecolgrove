@@ -28,7 +28,7 @@ $content = <<<EOT
         </div>
         <div class="subsection">
             <h4>Web Server</h4><br />
-            Hosts couple websites
+            Hosts couple websites.
         </div>
     </div>
 EOT;
