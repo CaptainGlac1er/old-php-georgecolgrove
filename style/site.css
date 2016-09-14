@@ -40,6 +40,9 @@ header{
     height: 100%;
     right: 0;
 }
+#about{
+    padding: 20px;
+}
 #top{
     //height: calc(100% - 50px);
     min-height: calc(100% - 50px);
@@ -49,6 +52,7 @@ header{
 footer{
     background-color: white;
     height: 50px;
+    padding: 10px;
 }
 nav{
     box-shadow: inset 0px 7px 10px -5px rgba(50, 50, 50, 0.75);
@@ -72,10 +76,10 @@ nav ul li{
     float:left;
     width: 25%;
     min-width: 140px;
-    height: 40px;
     line-height: 40px;
     padding: 5px;
     text-align: center;
+    box-sizing:border-box;
 }
 .interestrow{
     box-sizing: border-box;
@@ -128,4 +132,14 @@ nav ul li{
 }
 #panel{
     padding: 10px;
+}
+@media only screen and (max-width: 600px){
+    nav ul li{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 800px){
+    .group{
+        width: 100%;
+    }
 }

@@ -4,9 +4,9 @@
     <a href="https://github.com/CaptainGlac1er"><div class="interestrow" style="background: url(images/coding.jpg);">
         <span>Coding</span>
     </div></a>
-    <div class="interestrow" style="background: url(images/electronics.jpg);">
+    <a href="/computers.php"><div class="interestrow" style="background: url(images/electronics.jpg);">
         <span>Computers</span>
-    </div>
+    </div></a>
     <a href="https://www.facebook.com/gwcphotography/"><div class="interestrow" style="background: url(images/photo.jpg);">
         <span>Photography</span>
     </div></a>

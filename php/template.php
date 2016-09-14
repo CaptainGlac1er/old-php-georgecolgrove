@@ -23,7 +23,7 @@
                         <a href="/"><li>INTERESTS</li></a>
                         <a href="/resume.php"><li>RESUME</li></a>
                         <a href="/projects.php"><li>Projects</li></a>
-                        <li>ABOUT</li>
+                        <a href="/about.php"><li>ABOUT</li></a>
                     </ul>
                 </nav>
                 <section id="content">
