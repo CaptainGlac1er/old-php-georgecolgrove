@@ -16,7 +16,7 @@
                 <header>
                     <img src="../images/personalLogo2.png" width="100" height="100" align="bottom">
                     <br />
-                    <strong>George Walter Colgrove IV</strong><br/><strong>CaptainGlac1er</strong>
+                    <strong>George Walter Colgrove IV</strong><br/><strong>CaptainGlac1er</strong><br /><a href="https://www.linkedin.com/in/georgecolgrove"><strong>LinkedIn</strong></a>
                 </header>
                 <nav>
                     <ul>
