@@ -22,7 +22,7 @@
                     <ul>
                         <a href="/"><li>INTERESTS</li></a>
                         <a href="/resume.php"><li>RESUME</li></a>
-                        <a href="/projects.php"><li>Projects</li></a>
+                        <a href="/projects.php"><li>PROJECTS</li></a>
                         <a href="/about.php"><li>ABOUT</li></a>
                     </ul>
                 </nav>
