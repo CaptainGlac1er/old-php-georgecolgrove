@@ -2,7 +2,7 @@
     $title = "GWC";
     $content = <<<EOF
     <a href="https://github.com/CaptainGlac1er"><div class="interestrow" style="background: url(images/coding.jpg);">
-        <span>Coding</span>
+        <span>Github - Coding</span>
     </div></a>
     <a href="/computers.php"><div class="interestrow" style="background: url(images/electronics.jpg);">
         <span>Computers</span>
