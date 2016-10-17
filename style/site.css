@@ -29,6 +29,7 @@ header{
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 2px;
 }
 #contentback{
     z-index: -1;
@@ -44,6 +45,7 @@ header{
 }
 #about{
     padding: 20px;
+    background-color: lightgrey;
 }
 #top{
     //height: calc(100% - 50px);
@@ -135,6 +137,7 @@ nav a{
     //width: 50%;
     //float: left;
     margin-bottom: 10px;
+    border-radius: 2px;
 }
 .group h2{
     margin: 0;
@@ -159,4 +162,26 @@ nav a{
 a{
     color: red;
     text-decoration: none;
+
+}
+a.button{
+    background-color: darkgrey;
+    color: black;
+    padding: 5px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 2px;
+}
+a.button:hover{
+    margin-left: 1px;
+
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+nav ul li:hover{
+    background-color: lightgray;
+    box-shadow: inset 0px 7px 10px -5px rgba(50, 50, 50, 0.75);
 }
