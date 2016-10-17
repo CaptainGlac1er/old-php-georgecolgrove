@@ -51,7 +51,7 @@ foreach($languages as $language){
     $content .= '
         <div class="subsection"><div>
             <h4>'. $language["NAME"] . '</h4><br/>
-            ' . $language['YEARS'] .' years</div>
+            ' . $language['YEARS'] .' year' . (($language['YEARS'] > 1) ? "s" : "") . '</div>
         </div>
         ';}
 $content .= <<<EOF
