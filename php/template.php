@@ -54,7 +54,6 @@
             <div class="footer">
             There are 10 types of people in this world, those who understand binary and those who dont. :D <br/>
             Copyright George Colgrove
-                <?php echo $_SERVER['PHP_SELF']; ?>
                 </div>
         </footer>
     </body>
