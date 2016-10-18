@@ -59,12 +59,13 @@ footer{
     padding: 10px;
 }
 nav{
-    box-shadow: inset 0px 7px 10px -5px rgba(50, 50, 50, 0.75);
+    //box-shadow: inset 0px 7px 10px -5px rgba(50, 50, 50, 0.75);
     max-width: 800px;
     background-color: white;
     margin: 0 auto;
     //text-align: center;
     box-sizing: border-box;
+    display: block;
 }
 nav ul{
     box-sizing: border-box;
@@ -74,6 +75,7 @@ nav ul{
     padding: 0;
 }
 nav ul li{
+    box-shadow: inset 0px 7px 7px -8px rgba(50, 50, 50, 0.75);
     font-family: Arial Black, Impact;
     display: inline;
     list-style: none;
@@ -81,7 +83,7 @@ nav ul li{
     width: 25%;
     min-width: 140px;
     line-height: 40px;
-    padding: 5px;
+    padding: 2px;
     text-align: center;
     box-sizing:border-box;
 }
@@ -94,9 +96,11 @@ nav a{
     height: 200px;
     position: relative;
     //background-attachment: fixed;
+
 }
 .interestrow.front{
     background-size: cover;
+    margin-bottom: 5px;
 }
 .interestrow span{
     font-family: Arial Black, Impact;
@@ -147,8 +151,35 @@ nav a{
     padding: 10px;
 }
 @media only screen and (max-width: 600px){
+    nav{
+        display: none;
+        position: absolute;
+    }
+    nav.show{
+        opacity: .95;
+        z-index: 5;
+        display: block;
+        background-color: lightgray;
+    }
+    #mobilemenu{
+        display: block !important;
+        width: 100%;
+        padding: 10px;
+        background: lightgray;
+        cursor: pointer;
+    }
     nav ul li{
         width: 100%;
+        padding: 5px;
+    }
+    #fullheader{
+        display: none !important;
+    }
+    #compactheader{
+        display: block !important;
+    }
+    nav ul li:hover{
+        background-color: white !important;
     }
 }
 @media only screen and (max-width: 800px){
@@ -184,4 +215,19 @@ a:hover{
 nav ul li:hover{
     background-color: lightgray;
     box-shadow: inset 0px 7px 10px -5px rgba(50, 50, 50, 0.75);
+}
+#mobilemenu{
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+#fullheader{
+
+}
+#compactheader{
+    display: none;
+}
+.footer{
+    margin: 0 auto;
+    max-width: 800px;
 }
