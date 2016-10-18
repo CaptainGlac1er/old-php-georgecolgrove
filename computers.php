@@ -30,6 +30,10 @@ $content = <<<EOT
             <h4>Web Server</h4><br />
             Hosts couple websites.
         </div>
+        <div class="subsection">
+            <h4>Discord bot</h4><br />
+            Hosts my discord bot so it can have all day uptime.
+        </div>
     </div>
 EOT;
 

@@ -1,16 +1,22 @@
 <?php
-    $title = "GWC RESUME";
+    $title = "GWC Resume";
     $content = <<<EOF
     <div class="group">
         <h2>Colleges</h2>
 EOF;
 
 $colleges = array();
-$colleges[] = newCollege("Rochester Institute of Tech", "Software Engineering", "2015-2020", "images/rit.gif");
+$colleges[] = newCollege("Rochester Institute of Technology", "Software Engineering", "2015-2020", "images/rit.gif");
 $colleges[] = newCollege("Vermont Technical College", "Computer Engineering", "2014-2015", "images/vtc.png");
 $jobs = array();
-$jobs[] = newEmployment("Rochester Institute of Tech", "Software Developer", "2015-2016", "images/rit.gif");
-$jobs[] = newEmployment("Vermont Agengy of Transportation", "Technical Apprentice I", "2015", "images/vtran.png");
+$jobs[] = newEmployment("Rochester Institute of Technology", "Software Developer", "2015-2016", "images/rit.gif");
+$jobs[] = newEmployment("Vermont Agency of Transportation", "Technical Apprentice I", "2015", "images/vtran.png");
+$languages = array();
+$languages[] = newLanguage("Java", 3);
+$languages[] = newLanguage("C#", 2);
+$languages[] = newLanguage("PHP", 2);
+$languages[] = newLanguage("SQL", 1);
+$languages[] = newLanguage("Regex", 1);
 foreach($colleges as $college){
     $content .= '
         <div class="subsection"><div>
@@ -37,6 +43,23 @@ foreach($jobs as $job){
         ';}
 $content .= <<<EOF
     </div>
+    <div class="group">
+        <h2>Languages</h2>
+EOF;
+
+foreach($languages as $language){
+    $content .= '
+        <div class="subsection"><div>
+            <h4>'. $language["NAME"] . '</h4><br/>
+            ' . $language['YEARS'] .' year' . (($language['YEARS'] > 1) ? "s" : "") . '</div>
+        </div>
+        ';}
+$content .= <<<EOF
+    </div>
+
+EOF;
+$content .= <<<EOF
+    </div>
 
 
 EOF;
@@ -55,6 +78,12 @@ function newEmployment($name, $pos, $years, $img){
     $item["POS"] = $pos;
     $item["YEARS"] = $years;
     $item["IMG"] = $img;
+    return $item;
+}
+function newLanguage($name, $years){
+    $item = array();
+    $item['NAME'] = $name;
+    $item['YEARS'] = $years;
     return $item;
 }
 
