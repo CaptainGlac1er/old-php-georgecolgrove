@@ -6,14 +6,14 @@
 EOF;
 
 $colleges = array();
-$colleges[] = newCollege("Rochester Institute of Tech", "Software Engineering", "2015-2020", "images/rit.gif");
+$colleges[] = newCollege("Rochester Institute of Technology", "Software Engineering", "2015-2020", "images/rit.gif");
 $colleges[] = newCollege("Vermont Technical College", "Computer Engineering", "2014-2015", "images/vtc.png");
 $jobs = array();
-$jobs[] = newEmployment("Rochester Institute of Tech", "Software Developer", "2015-2016", "images/rit.gif");
-$jobs[] = newEmployment("Vermont Agengy of Transportation", "Technical Apprentice I", "2015", "images/vtran.png");
+$jobs[] = newEmployment("Rochester Institute of Technology", "Software Developer", "2015-2016", "images/rit.gif");
+$jobs[] = newEmployment("Vermont Agency of Transportation", "Technical Apprentice I", "2015", "images/vtran.png");
 $languages = array();
-$languages[] = newLanguage("C#", 2);
 $languages[] = newLanguage("Java", 3);
+$languages[] = newLanguage("C#", 2);
 $languages[] = newLanguage("PHP", 2);
 $languages[] = newLanguage("SQL", 1);
 $languages[] = newLanguage("Regex", 1);
