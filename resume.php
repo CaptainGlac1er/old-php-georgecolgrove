@@ -13,7 +13,7 @@
 EOF;
 
 $colleges = array();
-$colleges[] = newCollege("Rochester Institute of Technology", "Software Engineering", "2015-2020", "images/rit.gif");
+$colleges[] = newCollege("Rochester Institute of Technology", "Software Engineering", "2015-2019", "images/rit.gif");
 $colleges[] = newCollege("Vermont Technical College", "Computer Engineering", "2014-2015", "images/vtc.png");
 $jobs = array();
 $jobs[] = newEmployment("Rochester Institute of Technology", "Software Developer", "2015-2016", "images/rit.gif", "8 Bug fixes<br /> 2 Feature Improvements<br /> 1 Major Improvement");
