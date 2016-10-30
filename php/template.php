@@ -13,6 +13,10 @@
     <body>
         <script>
             $(this).ready(function(){
+                <?php
+                    if(isset($scripts))
+                        echo $scripts;
+                ?>
                 $('#mobilemenu').click(function(){
                    $('nav').toggleClass('show', 'slow');
 
