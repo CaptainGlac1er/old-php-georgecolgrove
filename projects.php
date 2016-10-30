@@ -6,6 +6,7 @@ $projects["vector"] = newProject("Vector Math", null, "Vector math calculator", 
 $projects["chemistry"] = newProject("Chemistry Tools", "https://github.com/CaptainGlac1er/ChemistryTools", "Chemistry App that I built for chemistry class.", "https://www.microsoft.com/en-us/store/p/chemistry-tools/9nblggh0g5zw");
 $projects["Discordtest"] = newProject("Discord Bot", "https://github.com/CaptainGlac1er/DiscordTest", "Fun project that I wanted to do to have fun with the Discord API. Pulls images from imgur and openweathermap.", null);
 $projects['WebServer'] = newProject('Web Server', "https://github.com/CaptainGlac1er/resume", "Built this web server to host this website.", "index.php");
+$projects['LaserProject'] = newProject('Laser Project', null, "Fun laser project", "https://youtu.be/nAnuzva5i8w");
 
 if(!empty($_GET) & isset($_GET["type"])){
     switch($_GET['type']){
@@ -43,17 +44,17 @@ if(!empty($_GET) & isset($_GET["type"])){
                         '. $proj['DESC'] . '
                     </div>';
                 }
+                if((isset($proj["GITHUB"]) && $proj["GITHUB"] != null) || (isset($proj["LINK"]) && $proj["LINK"] != null)){
+                    $output .= '<div class="subsection">';
                 if(isset($proj["GITHUB"]) && $proj["GITHUB"] != null){
                     $output .='
-                    <div class="subsection">
-                        <a class="button" href="'. $proj["GITHUB"] . '">Github Link :)</a>
-                    </div>';
+                        <a class="button" href="'. $proj["GITHUB"] . '">Github Link :)</a>';
                 }
                 if(isset($proj["LINK"]) && $proj["LINK"] != null){
                     $output .= '
-                    <div class="subsection">
-                        <a class="button" href="'. $proj["LINK"] . '">Check it out!</a>
-                    </div>';
+                        <a class="button" href="'. $proj["LINK"] . '">Check it out!</a>';
+                }
+                    $output .= '</div>';
                 }
                 $output .='</div>
                 ';

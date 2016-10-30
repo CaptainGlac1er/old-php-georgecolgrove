@@ -47,6 +47,11 @@ header{
     padding: 20px;
     background-color: lightgrey;
 }
+#about  img{
+    width: 20%;
+    margin: 10px;
+    border-radius: 50%;
+}
 #top{
     //height: calc(100% - 50px);
     min-height: calc(100% - 70px);
@@ -134,6 +139,19 @@ nav a{
 }
 .subsection div{
     float: left;
+    width: 100%;
+}
+.subsection div .text{
+    width: auto;
+}
+.details{
+    overflow: auto;
+    box-sizing: border-box;
+    background-color: lightgray;
+    padding: 10px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    display: none;
 }
 .group{
     box-sizing: border-box;
@@ -199,6 +217,7 @@ a.button{
     background-color: darkgrey;
     color: black;
     padding: 5px;
+    margin: 2px;
     border-width: 1px;
     border-color: black;
     border-style: solid;
@@ -206,7 +225,7 @@ a.button{
 }
 a.button:hover{
     margin-left: 1px;
-
+    margin-right: 3px;
 }
 a:hover{
 }
@@ -228,4 +247,12 @@ nav ul li:hover{
 .footer{
     margin: 0 auto;
     max-width: 800px;
+}
+.showDetails{
+    float: right !important;
+    width: 25px !important;
+    height: 25px;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 10px;
 }

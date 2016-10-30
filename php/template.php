@@ -13,6 +13,11 @@
     <body>
         <script>
             $(this).ready(function(){
+                <?php
+                    if(isset($scripts))
+                        echo $scripts;
+                ?>
+                $("#top").css('min-height', 'calc(100% - ' + ($('footer').outerHeight()) + 'px');
                 $('#mobilemenu').click(function(){
                    $('nav').toggleClass('show', 'slow');
 
