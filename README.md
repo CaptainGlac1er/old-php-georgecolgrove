@@ -1,5 +1,5 @@
 # resume
 Website for my resume
-
-Source code for georgecolgrove.com
+<br />
+Source code for georgecolgrove.com<br/>
 beta branch link is beta.georgecolgrove.com
