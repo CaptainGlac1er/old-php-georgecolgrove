@@ -44,7 +44,7 @@ EOF;
 
 foreach($jobs as $job){
     $content .= '
-        <div class="subsection"><div><div class="text">
+        <div class="subsection ' . (($job["DETAIL"] != null) ? "hover" : "") . '"><div><div class="text">
             <h4>'. $job["NAME"] . '</h4><br/>
             '. $job["POS"] . '<br/>
             '. $job["YEARS"] . '</div>';

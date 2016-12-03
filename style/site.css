@@ -278,3 +278,6 @@ nav ul li:hover{
 #wcg html body div{
     width: auto !important;
 }
+.hover{
+    cursor:pointer;
+}
