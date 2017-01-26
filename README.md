@@ -1,5 +1,12 @@
-# resume
-Website for my resume
+<html>
+<head>
+<title>GWC resume readme</title>
+</head>
+<body>
+<h1>GWC resume</h1>
+<h2>Website for my resume</h2>
 <br />
-Source code for georgecolgrove.com<br/>
-beta branch link is beta.georgecolgrove.com
+Source code for <a href="http://www.georgecolgrove.com/" >georgecolgrove.com</a><br/>
+beta branch link is <a href="http://beta.georgecolgrove.com/" >beta.georgecolgrove.com</a>
+</body>
+</html>
