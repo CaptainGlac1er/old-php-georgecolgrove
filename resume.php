@@ -14,7 +14,7 @@ EOF;
 
 $colleges = array();
 $colleges[] = newCollege("Rochester Institute of Technology", "Software Engineering", "2015-2019", "images/rit.gif", ["CSCI-140", "CMPE-160", "SWEN-262", "SWEN-256", "MATH-219", "PHYS-211"]);
-$colleges[] = newCollege("Vermont Technical College", "Computer Engineering", "2014-2015", "images/vtc.png", ["CIS-1152", "CIS-2730", "CIS-3010", "CIS-3620", "CIS-2230", "CIS-2260", "ELT-1031"]);
+$colleges[] = newCollege("Vermont Technical College", "Computer Engineering (Sr. Year of Highschool)", "2014-2015", "images/vtc.png", ["CIS-1152", "CIS-2730", "CIS-3010", "CIS-3620", "CIS-2230", "CIS-2260", "ELT-1031"]);
 $jobs = array();
 $jobs[] = newEmployment("Rochester Institute of Technology", "Software Developer", "2015-2017", "images/rit.gif", '9 Bug fixes<br /> 2 Feature Improvements<br /> 1 Major Improvement<br/>Overhauled <a class="show" href="http://start.rit.edu/">start.rit.edu</a> and added a mobile interface');
 $jobs[] = newEmployment("Vermont Agency of Transportation", "Technical Apprentice I", "2015", "images/vtran.png", "Improved efficiency of the on-campus lab, with new logging and reports for samples.");

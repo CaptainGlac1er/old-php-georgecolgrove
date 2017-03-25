@@ -1,10 +1,10 @@
 <?php
     $title = "GWC Hobbies";
     $content = <<<EOF
-    <a href="/computers.php"><div class="interestrow front" style="background-image: url(images/electronics.jpg);">
+    <a href="/hobbies/computers.php"><div class="interestrow front" style="background-image: url(images/electronics.jpg);">
         <span>Computers</span>
     </div></a>
-    <a href="/photos.php"><div class="interestrow front" style="background-image: url(images/photo.jpg);">
+    <a href="/hobbies/photos.php"><div class="interestrow front" style="background-image: url(images/photo.jpg);">
         <span>Photography</span>
     </div></a>
     <a href="http://steamcommunity.com/id/captainglac1er/"><div class="interestrow front" style="background-image: url(images/minecraft.png);">

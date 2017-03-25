@@ -5,13 +5,29 @@
 #photoviewer .photobuttons{
     z-index: 1;
     position: absolute;
-    width: 30px;
-    top: calc(50% - 30px);
-    height: 60px;
-    line-height: 60px;
-    background: rgba(255, 255, 255, 0.9);
+    width: 40px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
     text-align: center;
+    vertical-align: middle;
     font-size: 15px;
+    cursor: pointer;
+}
+#photoviewer .photobuttons div{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    margin-top: -25px;
+    top: 50%;
+}
+#photoviewer .photobuttons.dim{
+    background: rgba(255, 255, 255, 0.2);
+}
+#photoviewer .photobuttons:hover{
+    background: rgba(100, 100, 100, 0.8);
+}
+#photoviewer .photobuttons:active{
+    background: rgba(255, 255, 255, 0.8);
 }
 #photo{
     width: 100%;
@@ -42,9 +58,8 @@
 @media only screen and (max-width: 600px){
     #photoviewer .photobuttons{
         width: 50px;
-        top: calc(50% - 50px);
-        height: 100px;
-        line-height: 100px;
-
+    }
+    #photoviewer{
+        height: 300px;
     }
 }

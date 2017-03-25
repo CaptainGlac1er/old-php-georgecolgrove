@@ -39,7 +39,7 @@ $content = <<<EOT
         <h2>Custom Build</h2>
         <div class="subsection">
             <h4>CPU</h4><br />
-            Intel i5-4690k @ 4.20 Ghz
+            Intel i5-4690k @ 4.30 Ghz
         </div>
         <div class="subsection">
             <h4>RAM</h4><br />
@@ -61,6 +61,10 @@ $content = <<<EOT
             <h4>Case</h4><br />
             NZXT 220 Source
         </div>
+        <div class="subsection">
+            <h4>CPU Cooler</h4><br />
+            Noctua NH-D14
+        </div>
     <div class="group">
         <h2>Purpose</h2>
         <div class="subsection">
@@ -74,6 +78,5 @@ $content = <<<EOT
     </div>
     </div>
 EOT;
-
-include("php/template.php");
+include($_SERVER['DOCUMENT_ROOT'] ."\\php\\template.php");
 ?>

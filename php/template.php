@@ -9,12 +9,12 @@ if(!isset($showTemplate) || $showTemplate){ ?>
                    echo $options;
                }
         ?>
-        <link rel="stylesheet" href="style/site.css">
+        <link rel="stylesheet" href="../style/site.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
         </script>
         <link rel="icon"
       type="image/png"
-      href="../images/personalLogo2.png">
+      href="<../images/personalLogo2.png">
         <title><?php if(isset($title)) echo $title; ?></title>
     </head>
     <body>
