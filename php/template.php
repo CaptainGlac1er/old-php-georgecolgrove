@@ -1,43 +1,28 @@
-<?php
-if(!isset($showTemplate) || $showTemplate){ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <?php
-               if(isset($options)){
-                   echo $options;
-               }
-        ?>
-        <link rel="stylesheet" href="../style/site.css">
+        <link rel="stylesheet" href="style/site.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
         </script>
         <link rel="icon"
       type="image/png"
-      href="<../images/personalLogo2.png">
-        <title><?php if(isset($title)) echo $title; ?></title>
+      href="../images/personalLogo2.png">
+        <title><?php echo $title; ?></title>
     </head>
     <body>
         <script>
             $(this).ready(function(){
+                <?php
+                    if(isset($scripts))
+                        echo $scripts;
+                ?>
                 $("#top").css('min-height', 'calc(100% - ' + ($('footer').outerHeight()) + 'px');
                 $('#mobilemenu').click(function(){
                    $('nav').toggleClass('show', 'slow');
 
                 });
             });
-        </script>
-        <script>
-            $(document).ready(function(){
-                <?php
-                if(isset($scriptsready))
-                    echo $scriptsready;
-            ?>
-            });
-            <?php
-                if(isset($scripts))
-                    echo $scripts;
-            ?>
         </script>
         <div id="contentback">
         </div>
@@ -66,8 +51,7 @@ if(!isset($showTemplate) || $showTemplate){ ?>
                 <section id="content">
 
                     <?php
-                        if(isset($content))
-                            echo $content;
+                        echo $content;
                     ?>
                 </section>
         </div>
@@ -79,4 +63,3 @@ if(!isset($showTemplate) || $showTemplate){ ?>
         </footer>
     </body>
 </html>
-<?php }?>

@@ -1,4 +1,7 @@
 <html>
+<head>
+<title>GWC resume readme</title>
+</head>
 <body>
 <h1>GWC resume</h1>
 <h2>Website for my resume</h2>
