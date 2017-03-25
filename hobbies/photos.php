@@ -8,7 +8,7 @@ switch($_POST['images']){
         $httpdir = '/Photos';
         if($d = opendir($dir)){
             while(false !== ($file = readdir($d))){
-                if(strpos($file, '.jpg') !== false){
+                if(strpos($file, '.JPG') !== false){
                     $files[] = $httpdir . '/' . $file;
                 }
             }
