@@ -1,28 +1,43 @@
+<?php
+if(!isset($showTemplate) || $showTemplate){ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style/site.css">
+        <?php
+               if(isset($options)){
+                   echo $options;
+               }
+        ?>
+        <link rel="stylesheet" href="../style/site.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
         </script>
         <link rel="icon"
       type="image/png"
-      href="../images/personalLogo2.png">
-        <title><?php echo $title; ?></title>
+      href="<../images/personalLogo2.png">
+        <title><?php if(isset($title)) echo $title; ?></title>
     </head>
     <body>
         <script>
             $(this).ready(function(){
-                <?php
-                    if(isset($scripts))
-                        echo $scripts;
-                ?>
                 $("#top").css('min-height', 'calc(100% - ' + ($('footer').outerHeight()) + 'px');
                 $('#mobilemenu').click(function(){
                    $('nav').toggleClass('show', 'slow');
 
                 });
             });
+        </script>
+        <script>
+            $(document).ready(function(){
+                <?php
+                if(isset($scriptsready))
+                    echo $scriptsready;
+            ?>
+            });
+            <?php
+                if(isset($scripts))
+                    echo $scripts;
+            ?>
         </script>
         <div id="contentback">
         </div>
@@ -51,7 +66,8 @@
                 <section id="content">
 
                     <?php
-                        echo $content;
+                        if(isset($content))
+                            echo $content;
                     ?>
                 </section>
         </div>
@@ -63,3 +79,4 @@
         </footer>
     </body>
 </html>
+<?php }?>
