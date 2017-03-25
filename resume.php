@@ -1,7 +1,7 @@
 <?php
     $title = "GWC Resume";
 
-    $scripts = '
+    $scriptsready = '
         $(".subsection").click(function(){
             $(this).children(".details").toggle("slow");
         })
