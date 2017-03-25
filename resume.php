@@ -89,9 +89,15 @@ EOF;
 
 foreach($languages as $language){
     $content .= '
-        <div class="subsection"><div>
-            <h4>'. $language["NAME"] . '</h4><br/>
-            ' . $language['YEARS'] .' year' . (($language['YEARS'] > 1) ? "s" : "") . '</div>
+        <div class="subsection">
+            <div>
+                <div style="width: 100px">
+                    <h4>'. $language["NAME"] . ':</h4>
+                </div>
+                <div style="width: auto">
+                ' . $language['YEARS'] .' year' . (($language['YEARS'] > 1) ? "s" : "") . '
+                </div>
+            </div>
         </div>
         ';}
 $content .= <<<EOF

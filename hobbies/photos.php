@@ -1,6 +1,6 @@
 <?php
-if(isset($_GET['images'])){
-switch($_GET['images']){
+if(isset($_POST['images'])){
+switch($_POST['images']){
     case 'get':
         $showTemplate = false;
         $files = array();
@@ -24,11 +24,14 @@ EOF;
     $scripts = <<<EOF
     var images = [];
     var index = 0;
+    var slideshowID;
     $(document).ready(function(){
-    window.setInterval(nextPhoto,5000);
+    slideshowID = setInterval(nextPhoto,5000);
     $.ajax({
+        type: "POST",
         dataType: "json",
-        url: "photos.php?images=get",
+        data: {'images': 'get'},
+        url: "photos.php",
         success: function(data, status, jqXHR){
             $.each(data, function(key, val){
                 images.push(val);
@@ -44,11 +47,11 @@ EOF;
         $('#forward').addClass('dim');
     });
     });
-    /*$( document ).ajaxComplete(function( event, xhr, settings ) {
-        if ( settings.url === "/photos.php?images=get" ) {
+    $( document ).ajaxComplete(function( event, xhr, settings ) {
+        if ( settings.url === "/photos.php" ) {
             console.log( "Triggered ajaxComplete handler. The result is " + xhr.responseText );
         }
-    });*/
+    });
     function displayImages(){
         console.log(images.length);
         if(images.length > 0){
@@ -64,6 +67,9 @@ EOF;
                 index = 0;
             viewPhoto();
         }
+    }
+    function stopInterval(){
+      clearInterval(slideshowID);
     }
     function prevPhoto(){
         if(canPressNext){
@@ -90,12 +96,12 @@ EOF;
         <h2>Photography</h2>
         <div class="groupcontent">
             <div id="photoviewer">
-                <div id="forward" class="photobuttons disable-select dim" onclick="nextPhoto()">
+                <div id="forward" class="photobuttons disable-select dim" onclick="nextPhoto(); stopInterval();">
                     <div>
                     >
                     </div>
                 </div>
-                <div id="back" class="photobuttons disable-select dim" onclick="prevPhoto()">
+                <div id="back" class="photobuttons disable-select dim" onclick="prevPhoto(); stopInterval();">
                     <div>
                     <
                     </div>

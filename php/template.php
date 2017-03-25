@@ -14,7 +14,7 @@ if(!isset($showTemplate) || $showTemplate){ ?>
         </script>
         <link rel="icon"
       type="image/png"
-      href="<../images/personalLogo2.png">
+      href="/images/personalLogo2.png">
         <title><?php if(isset($title)) echo $title; ?></title>
     </head>
     <body>
@@ -44,12 +44,12 @@ if(!isset($showTemplate) || $showTemplate){ ?>
         <div id="top">
                 <a href="/"><header>
                     <div id="fullheader">
-                        <img src="../images/personalLogo2.png" width="100" height="100" align="bottom">
+                        <img src="/images/personalLogo2.png" width="100" height="100" align="bottom">
                         <br />
                         <strong>George Walter Colgrove IV</strong><br/><strong>CaptainGlac1er</strong>
                     </div>
                     <div id="compactheader">
-                        <img src="../images/personalLogo2.png" width="50" height="50" align="bottom">
+                        <img src="/images/personalLogo2.png" width="50" height="50" align="bottom">
                         <br />
                         <strong>George W. Colgrove IV</strong>
                     </div>
