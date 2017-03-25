@@ -1,5 +1,5 @@
 <?php
-    $title = "GWC";
+    $title = "GWC Computers";
 $content = <<<EOT
     <div class="group">
         <h2>Server</h2>

@@ -17,7 +17,7 @@ switch($_POST['images']){
         break;
 }
 }else{
-    $title = "GWC";
+    $title = "GWC Photos";
     $options = <<<EOF
         <link rel="stylesheet" href="../style/photoviewer.css">
 EOF;
