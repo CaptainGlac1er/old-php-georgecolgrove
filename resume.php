@@ -13,18 +13,18 @@
 EOF;
 
 $colleges = array();
-$colleges[] = newCollege("Rochester Institute of Technology", "Software Engineering", "2015-2019", "images/rit.gif", ["CSCI-140", "CMPE-160", "SWEN-262", "SWEN-256", "MATH-219", "PHYS-211"]);
+$colleges[] = newCollege("Rochester Institute of Technology", "Software Engineering", "2015-2019", "images/rit.gif", ["CSCI-140", "CMPE-160", "SWEN-262", "SWEN-256", "MATH-219", "PHYS-211","CMPE-250"]);
 $colleges[] = newCollege("Vermont Technical College", "Computer Engineering (Sr. Year of Highschool)", "2014-2015", "images/vtc.png", ["CIS-1152", "CIS-2730", "CIS-3010", "CIS-3620", "CIS-2230", "CIS-2260", "ELT-1031"]);
 $jobs = array();
-$jobs[] = newEmployment("Rochester Institute of Technology", "Software Developer", "2015-2017", "images/rit.gif", '9 Bug fixes<br /> 2 Feature Improvements<br /> 1 Major Improvement<br/>Overhauled <a class="show" href="http://start.rit.edu/">start.rit.edu</a> and added a mobile interface');
+$jobs[] = newEmployment("Rochester Institute of Technology", "Software Developer", "2015-2017", "images/rit.gif", '9 Bug fixes<br /> 3 Feature Improvements<br /> 1 Major Improvement<br/>Overhauled <a class="show" href="http://start.rit.edu/">start.rit.edu</a> and added a mobile interface');
 $jobs[] = newEmployment("Vermont Agency of Transportation", "Technical Apprentice I", "2015", "images/vtran.png", "Improved efficiency of the on-campus lab, with new logging and reports for samples.");
 $jobs[] = newEmployment("Vermont Technical College", "IT Helpdesk", "2014-2015", "images/vtc.png", "Took inventory of computers, repaired and setup computers, and on call support.");
 $jobs[] = newEmployment("Vermont Technical College", "CIS-2261 Teacher Assistant", "2015-2015", "images/vtc.png", "Helped students with Java Programming.");
 $jobs[] = newEmployment("Vermont Technical College", "Teacher Assistant", "2014-2014", "images/vtc.png", "Helped students with Website Development.");
 $languages = array();
-$languages[] = newLanguage("Java", 4);
-$languages[] = newLanguage("C#", 3);
-$languages[] = newLanguage("PHP", 3);
+$languages[] = newLanguage("Java", 5);
+$languages[] = newLanguage("C#", 4);
+$languages[] = newLanguage("PHP", 4);
 $languages[] = newLanguage("HTML", 3);
 $languages[] = newLanguage("SQL", 2);
 $languages[] = newLanguage("Regex", 1);
