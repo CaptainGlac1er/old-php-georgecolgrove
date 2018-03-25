@@ -9,6 +9,7 @@ $projects['LaserProject'] = newProject('Laser Project', null, "Fun laser project
 $projects["vector"] = newProject("Vector Math", null, "Vector math calculator", "https://www.microsoft.com/en-us/store/p/vector-math/9nblgggzl4hm");
 $projects["chemistry"] = newProject("Chemistry Tools", "https://github.com/CaptainGlac1er/ChemistryTools", "Chemistry App that I built for chemistry class.", "https://www.microsoft.com/en-us/store/p/chemistry-tools/9nblggh0g5zw");
 $projects["Discordtest"] = newProject("Discord Bot", "https://github.com/CaptainGlac1er/DiscordTest", "Fun project that I wanted to do to have fun with the Discord API. Pulls data from imgur, cleverbot, weather underground, and openweathermap.", null);
+$projects["tigertenant"] = newProject("Tiger Tenant", "https://github.com/CaptainGlac1er/swen-356-sublet", "Built with a team of 5 using the scrum process", null);
 if(!empty($_GET) & isset($_GET["type"])){
     switch($_GET['type']){
         case "get":
@@ -24,7 +25,10 @@ if(!empty($_GET) & isset($_GET["type"])){
             if(isset($_GET['app']) && isset($projects[$_GET['app']])){
                 $item = $projects[$_GET['app']];
                 $content = $item["NAME"] . " " . $item['LINK'];
-                echo '<html><head><meta HTTP-EQUIV="REFRESH" content="0; url=' .  $item['LINK'] . '"></head></html>';
+                if($item['LINK'] != null)
+                    echo '<html><head><meta HTTP-EQUIV="REFRESH" content="0; url=' .  $item['LINK'] . '"></head></html>';
+                else if($item['GITHUB'] != null)
+                    echo '<html><head><meta HTTP-EQUIV="REFRESH" content="0; url=' .  $item['GITHUB'] . '"></head></html>';
                 return;
             }else{
                 $content = "empty app";
