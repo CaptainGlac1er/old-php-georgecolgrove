@@ -9,7 +9,7 @@ if(!isset($showTemplate) || $showTemplate){ ?>
                    echo $options;
                }
         ?>
-        <link rel="stylesheet" href="../style/site.css">
+        <link rel="stylesheet" href="/style/site.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
         </script>
         <link rel="icon"

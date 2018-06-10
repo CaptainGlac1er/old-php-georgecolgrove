@@ -78,5 +78,5 @@ $content = <<<EOT
     </div>
     </div>
 EOT;
-include($_SERVER['DOCUMENT_ROOT'] ."\\php\\template.php");
+include($_SERVER['DOCUMENT_ROOT'] ."/php/template.php");
 ?>

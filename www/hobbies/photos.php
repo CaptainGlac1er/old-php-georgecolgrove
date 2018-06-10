@@ -4,7 +4,7 @@ switch($_POST['images']){
     case 'get':
         $showTemplate = false;
         $files = array();
-        $dir = $_SERVER['DOCUMENT_ROOT'] . '\\Photos';
+        $dir = $_SERVER['DOCUMENT_ROOT'] . '/Photos';
         $httpdir = '/Photos';
         if($d = opendir($dir)){
             while(false !== ($file = readdir($d))){
@@ -123,5 +123,5 @@ EOF;
 EOF;
 
 }
-include($_SERVER['DOCUMENT_ROOT'] ."\\php\\template.php");
+include($_SERVER['DOCUMENT_ROOT'] ."/php/template.php");
 ?>
