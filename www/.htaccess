@@ -1,7 +1,8 @@
-RewriteEngine On
-RewriteCond %{HTTPS} off [OR]
-RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+#RewriteEngine On
+#RewriteCond %{HTTPS} off [OR]
+#RewriteCond %{HTTP_HOST} !^www\. [NC]
+#RewriteCond %{HTTP_HOST} !^localhost [NC]
+#RewriteRule (.*) https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
 
 
 ErrorDocument 404 /404.php

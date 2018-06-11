@@ -14,7 +14,7 @@ RUN a2enmod php7.0
 RUN a2enmod rewrite
 RUN a2enmod ssl
 
-VOLUME /tmp/log/apache2/ /var/log/apache2
+#VOLUME logs /var/log/apache2
 # Manually set up the apache environment variables
 
 ENV APACHE_RUN_USER www-data
@@ -30,12 +30,13 @@ EXPOSE 443
 
 # Copy this repo into place.
 
-ADD www /var/www/site
+#VOLUME www /var/www/site
+#ADD certs /etc/ssl/certs
 
 # Update the default apache site with the config we created.
 
-ADD apache-config.conf /etc/apache2/sites-enabled/000-default.conf
-ADD default-ssl.conf /etc/apache2/sites-enabled/000-default-ssl.conf
+ADD ./config/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+#ADD ./config/000-default-ssl.conf /etc/apache2/sites-enabled/000-default-ssl.conf
 
 # By default start up apache in the foreground, override with /bin/bash for interative.
 
