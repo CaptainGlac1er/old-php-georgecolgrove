@@ -9,4 +9,4 @@ ErrorDocument 404 /404.php
 
 
 RewriteEngine  on
-RewriteRule "projects/([^/]+)/?$"  "projects.php?type=redirect&amp;app=$1" 
+RewriteRule "projects/([^/]+)/?$"  "projects.php?type=redirect&app=$1" 
