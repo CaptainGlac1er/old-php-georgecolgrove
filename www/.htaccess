@@ -6,3 +6,7 @@
 
 
 ErrorDocument 404 /404.php
+
+
+RewriteEngine  on
+RewriteRule "projects/([^/]+)/?$"  "projects.php?type=redirect&amp;app=$1" 
