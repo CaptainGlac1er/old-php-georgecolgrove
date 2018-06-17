@@ -1,8 +1,8 @@
-FROM ubuntu:16.04
-RUN apt-get update
-RUN apt-get install -y apache2 
-RUN apt-get install -y php 
-RUN apt-get install -y libapache2-mod-php
+FROM php:7.2.6-apache
+#RUN apt-get update
+#RUN apt-get install -y apache2 
+#RUN apt-get install -y php 
+#RUN apt-get install -y libapache2-mod-php
     
 # Update the PHP.ini file, enable <? ?> tags and quieten logging.
 
