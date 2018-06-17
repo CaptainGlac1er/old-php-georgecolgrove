@@ -10,9 +10,9 @@ FROM php:7.2.6-apache
 
 RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
 
-RUN a2enmod php7.0
-RUN a2enmod rewrite
-RUN a2enmod ssl
+#RUN a2enmod php7.0
+#RUN a2enmod rewrite
+#RUN a2enmod ssl
 
 #VOLUME logs /var/log/apache2
 # Manually set up the apache environment variables
@@ -26,7 +26,7 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 # Expose apache.
 
 EXPOSE 80
-EXPOSE 443
+#EXPOSE 443
 
 # Copy this repo into place.
 
