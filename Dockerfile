@@ -11,7 +11,7 @@ FROM php:7.2.6-apache
 RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
 
 #RUN a2enmod php7.0
-#RUN a2enmod rewrite
+RUN a2enmod rewrite
 #RUN a2enmod ssl
 
 #VOLUME logs /var/log/apache2
