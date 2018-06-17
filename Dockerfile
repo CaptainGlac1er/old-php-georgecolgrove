@@ -1,18 +1,18 @@
-FROM php:7.2.6-apache
-#RUN apt-get update
-#RUN apt-get install -y apache2 
-#RUN apt-get install -y php 
-#RUN apt-get install -y libapache2-mod-php
+FROM ubuntu:16.04
+RUN apt-get update
+RUN apt-get install -y apache2 
+RUN apt-get install -y php 
+RUN apt-get install -y libapache2-mod-php
     
 # Update the PHP.ini file, enable <? ?> tags and quieten logging.
 
-#RUN sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/" /usr/local/etc/php/php.ini
+RUN sed -i "s/error_reporting = .*$/error_reporting = E_ERROR | E_WARNING | E_PARSE/" /etc/php/7.0/apache2/php.ini
 
-#RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
+RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
 
-#RUN a2enmod php7.0
-#RUN a2enmod rewrite
-#RUN a2enmod ssl
+RUN a2enmod php7.0
+RUN a2enmod rewrite
+RUN a2enmod ssl
 
 #VOLUME logs /var/log/apache2
 # Manually set up the apache environment variables
@@ -26,7 +26,7 @@ ENV APACHE_PID_FILE /var/run/apache2.pid
 # Expose apache.
 
 EXPOSE 80
-#EXPOSE 443
+EXPOSE 443
 
 # Copy this repo into place.
 
